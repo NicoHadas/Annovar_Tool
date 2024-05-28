@@ -1,2 +1,5 @@
-# Annovar_Tool
-Identifies Pathogenic Genes in Annovar Data
+# **Annovar Analysis Tool**
+
+### Installation
+
+The analysis tool can be installed from GitHub by directly downloading the raw file content of ['Annovar_Annalysis_Sort']()
