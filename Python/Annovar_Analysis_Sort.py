@@ -19,6 +19,7 @@ def Annovar_Analysis_Sort(Input_File_Path, Output_File_Path):
 
         Annovar_Analysis_Sort: Str Str -> None 
         """
+        import pandas as pd # Import pandas dependency
         A_data = pd.read_excel(Input_File_Path) # Open File
         A_data["N_Score"] = 0 # Add column to later lump the various scores 
         A_data["N_Score_D"] = 10 # Set normalizing column to 10 (number of predictors)
