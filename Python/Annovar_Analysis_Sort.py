@@ -19,7 +19,8 @@ def Annovar_Analysis_Sort(Input_File_Path, Output_File_Path):
 
         Annovar_Analysis_Sort: Str Str -> None 
         """
-        import pandas as pd # Import pandas dependency
+        import pandas as pd
+
         A_data = pd.read_excel(Input_File_Path) # Open File
         A_data["N_Score"] = 0 # Add column to later lump the various scores 
         A_data["N_Score_D"] = 10 # Set normalizing column to 10 (number of predictors)
@@ -85,3 +86,24 @@ def Annovar_Analysis_Sort(Input_File_Path, Output_File_Path):
         A_data = A_data.sort_values(['N_Score_P', 'Zygosity', 'N_Score_D'], ascending=False) # Sort on decreasing N_Score_P, decreasing Zygosity and then decreasing N_Score_D
         A_data.to_excel(Output_File_Path, index=False) # Output Excel File 
         print(A_data[['Chr', 'Start', 'End']].head(11)) # Print first ten most probable results 
+
+functions = {
+    "Annovar_Analysis_Sort": Annovar_Analysis_Sort
+}
+
+import argparse
+parser = argparse.ArgumentParser(description = "Annovar Tool")
+parser.add_argument('function', metavar = 'function', help = "Specifiy which function to use")
+parser.add_argument('input_path', metavar = 'input_path', type = str,  help = "Enter Annovar File Path")
+parser.add_argument('output_path', metavar = 'output_path', type = str,  help = "Enter Annovar File Path")
+args = parser.parse_args()
+
+name = args.function
+functions[name](args.input_path, args.output_path)
+        
+
+
+
+
+
+
