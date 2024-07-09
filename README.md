@@ -8,11 +8,14 @@ The analysis tool can be installed from GitHub by directly downloading the raw f
 
 `Annovar_Analysis_Sort` analyzes Annovar ouput data and identifies the pathogenic mutations
 
-```{python}
+```{bash}
 # Run the Annovar Tool in Command Line
 Annovar_Analysis_Sort.py Annovar_Analysis_Sort Input_File_Path Output_File_Path
 ```
-
+For Example
+```{bash}
+Annovar_Analysis_Sort.py Annovar_Analysis_Sort /home/User/Annovar_Input.xlsx /home/User/Annovar_Output.xlsx
+```
 ## Dependencies 
 
 [Pandas](https://pandas.pydata.org/docs/getting_started/install.html)
