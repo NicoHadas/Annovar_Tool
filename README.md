@@ -1,5 +1,9 @@
 # **Annovar Analysis Tool**
 
+### Usage ###
+
+Identifies the pathogenic mutations in Annovar ouput data frames
+
 ### Installation
 
 The analysis tool can be installed from GitHub by directly downloading the raw file content of [`Annovar_Analysis_Sort`](https://github.com/NicoHadas/Annovar_Tool/blob/main/Python/Annovar_Analysis_Sort.py)
