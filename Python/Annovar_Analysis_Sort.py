@@ -14,7 +14,7 @@ def Annovar_Analysis_Sort(Input_File_Path, Output_File_Path):
         """
         This function iterates through the columns of an Annovar ouput data frame, and adds points to genes 
         for meeting the various thresholds of multiple pathogenicity predictors. The function sorts the 
-        genes in increasing normalized score and returns the first ten sorted genes while outputting  the sorted 
+        genes in increasing normalized score and returns the first ten sorted genes while outputting the sorted 
         .xlsx file
 
         Annovar_Analysis_Sort: Str Str -> None 
