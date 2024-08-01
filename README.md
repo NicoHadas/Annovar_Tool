@@ -2,7 +2,7 @@
 
 ### Usage ###
 
-Identifies the pathogenic mutations in Annovar ouput data frames
+Identifies the pathogenic mutations in Annovar ouput data frames. V1 handles .xlsx files, while V2 inputs .csv files.
 
 ### Installation
 
