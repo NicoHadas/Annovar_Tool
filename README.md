@@ -16,7 +16,8 @@ The analysis tool can be installed from GitHub by directly downloading the raw f
 # Run the Annovar Tool in Command Line
 python3 Annovar_Analysis_Sort.py Annovar_Analysis_Sort Input_File_Path Output_File_Path
 ```
-For Example - V1
+### Examples
+V1
 ```{bash}
 python3 Annovar_Analysis_Sort.py Annovar_Analysis_Sort /home/User/Annovar_Input.xlsx /home/User/Annovar_Output.xlsx
 ```
